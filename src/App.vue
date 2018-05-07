@@ -1,16 +1,19 @@
 <template>
     <div id="app">
-        <div class="test">Hello World !</div>
+        <hello></hello>
         <router-view/>
     </div>
 </template>
 <script>
+import Hello from './components/HelloWorld';
 export default {
-    name: 'App'
+    name: 'App',
+    components: {Hello},
+    data() {
+       return {
+       }
+    }
 }
 </script>
 <style>
-.test{
-    color: red;
-}
 </style>
